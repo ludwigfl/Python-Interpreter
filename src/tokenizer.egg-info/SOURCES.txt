@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+src/tokenizer/token.py
+src/tokenizer/tokenizer.py
+src/tokenizer.egg-info/PKG-INFO
+src/tokenizer.egg-info/SOURCES.txt
+src/tokenizer.egg-info/dependency_links.txt
+src/tokenizer.egg-info/top_level.txt
+tests/test_tokenizer.py

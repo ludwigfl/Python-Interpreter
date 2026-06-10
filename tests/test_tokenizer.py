@@ -1,5 +1,5 @@
 import pytest
-from tokenizer import Token, Tokenizer, TokenType
+from mylang.tokenizer import Token, Tokenizer, TokenType
 
 def test_tokenizer_addition():
     tokens = list(Tokenizer("3 + 5"))

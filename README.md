@@ -6,9 +6,9 @@ A Python interpreter (and compiler).
 
 This project follows the full execution pipeline of a programming language:
 
-1. **Tokenizer** – converts source code into tokens. (DONE)
-2. **Parser** – converts tokens into an Abstract Syntax Tree (AST). (DONE)
-3. **Compiler** – converts the AST into bytecode. (NOT DONE)
+1. **Tokenizer** – converts source code into tokens.
+2. **Parser** – converts tokens into an Abstract Syntax Tree (AST). 
+3. **Compiler** – converts the AST into bytecode.
 4. **Interpreter (VM)** – executes the bytecode. (NOT DONE)
 
 ## Example
@@ -16,13 +16,13 @@ This project follows the full execution pipeline of a programming language:
 Input:
 
 ```python
-1 + 2 - 3
+3 - 5
 ```
 
 Tokens:
 
 ```text
-INT(1) PLUS INT(2) MINUS INT(3) EOF
+INT(3) MINUS INT(5) EOF
 ```
 
 ## Running Tests
@@ -52,12 +52,18 @@ Python-Interpreter/
 │       │   ├── ast.py
 │       │   ├── parser.py
 │       │   └── __init__.py
+|       |
+│       ├── compiler/
+│       │   ├── bytecode.py
+│       │   ├── compiler.py
+│       │   └── __init__.py
 │       │
 │       └── main.py
 │
 ├── tests/
 │   ├── test_tokenizer.py
 │   ├── test_parser.py
+│   ├── test_compiler.py
 │
 ├── pyproject.toml
 ├── requirements.txt

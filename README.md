@@ -9,7 +9,7 @@ This project follows the full execution pipeline of a programming language:
 1. **Tokenizer** – converts source code into tokens.
 2. **Parser** – converts tokens into an Abstract Syntax Tree (AST). 
 3. **Compiler** – converts the AST into bytecode.
-4. **Interpreter (VM)** – executes the bytecode. (NOT DONE)
+4. **Interpreter (VM)** – executes the bytecode. 
 
 ## Example
 
@@ -57,13 +57,20 @@ Python-Interpreter/
 │       │   ├── bytecode.py
 │       │   ├── compiler.py
 │       │   └── __init__.py
+|       |
+│       ├── interpreter/
+│       │   ├── stack.py
+│       │   ├── interpreter.py
+│       │   └── __init__.py
 │       │
+│       ├── __init__.py
 │       └── main.py
 │
 ├── tests/
 │   ├── test_tokenizer.py
 │   ├── test_parser.py
 │   ├── test_compiler.py
+|   └── test_interpreter.py
 │
 ├── pyproject.toml
 ├── requirements.txt

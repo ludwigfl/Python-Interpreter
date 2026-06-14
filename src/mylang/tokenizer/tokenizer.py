@@ -1,6 +1,6 @@
 from string import digits
 from typing import Generator
-from mylang.tokenizer.token_model import Token, TokenType
+from .token_model import Token, TokenType
 
 class Tokenizer:
     def __init__(self, code: str) -> None:

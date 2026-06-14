@@ -1,5 +1,5 @@
 from mylang.parser.ast import BinOp
-from mylang.compiler.bytecode import Bytecode, BytecodeType
+from .bytecode import Bytecode, BytecodeType
 from typing import Generator
 
 

@@ -1,5 +1,5 @@
 from mylang.tokenizer.token_model import Token, TokenType
-from mylang.parser.ast import BinOp, Int
+from .ast import BinOp, Int
 
 class Parser:
     def __init__(self, tokens: list[Token]) -> None:
